@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (BuildContext context) => WatchScreenViewModel(),
       child: MaterialApp(
-        title: 'Provider Practise',
+        title: 'Test App',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           fontFamily: 'Poppins',

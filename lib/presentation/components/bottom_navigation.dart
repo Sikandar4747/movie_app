@@ -16,8 +16,13 @@ class BottomNavigationWidget extends StatelessWidget {
         horizontal: 20,
         vertical: 10,
       ),
-      decoration: BoxDecoration(
-          color: AppColors.bottomNavBarBgColor, borderRadius: BorderRadius.circular(27)),
+      decoration: const BoxDecoration(
+        color: AppColors.bottomNavBarBgColor,
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(27),
+          topRight: Radius.circular(27),
+        ),
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
